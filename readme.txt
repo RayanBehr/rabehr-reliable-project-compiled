@@ -1,0 +1,1 @@
+I am unable to publicly share the source code of reliable.c due to course restrictions. However, the executable is available in compiled form, and a diagram in reliable-temp.pdf provides an overview of its functionality.
