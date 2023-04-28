@@ -1,0 +1,168 @@
+docker run -it --rm -v /Users/rayanbehr/Library/Mobile\ Documents/com~apple~CloudDocs/Education/Studium/G\ cnet\ FS/Projects/rabehr-reliable-project:/project cn
+
+make 
+gcc -g -Wall -Wextra -Wno-unused-variable -c reliable.c
+
+./reference 6666 5555
+./reference 5555 6666
+
+./test_script.sh
+
+./tester --seed 38935952 -w 60234230 ./reliable
+./tester --seed 38935952 -w 1 ./reliable
+
+./tester --seed 38935952 -w 32 -T 13 -v ./reliable -d
+
+./tester --seed 38935952 -w 245 -v ./reliable -d
+./tester --seed 38935952 -w 66 -T 6 -v ./reliable -d
+./tester --seed 38935952 -w 66 -T 10 -v ./reliable -d &&
+./tester --seed 38935952 -w 66 -T 11 -v ./reliable -d &&
+./tester --seed 38935952 -w 66 -T 12 -v ./reliable -d &&
+./tester --seed 38935952 -w 66 -T 14 -v ./reliable -d &&
+./tester --seed 38935952 -w 66 -T 13 -v ./reliable -d &&
+./tester --seed 38935952 -w 66 -T 7 -v ./reliable -d
+
+./tester -w 5 --seed 3 -T 11 -v ./reliable -d
+
+./tester -w 3 --seed 5 -v ./reliable -d
+
+./tester -w 100 --seed 5 ./reliable
+
+./tester ./reliable
+./tester -T 1 ./reliable
+./tester -T 2 ./reliable
+./tester -T 3 ./reliable
+./tester -T 4 ./reliable
+./tester -T 5 ./reliable
+./tester -T 6 ./reliable
+./tester -T 7 ./reliable
+./tester -T 8 ./reliable
+./tester -T 9 ./reliable
+./tester -T 10 ./reliable
+./tester -T 11 ./reliable
+./tester -T 12 ./reliable
+./tester -T 13 ./reliable
+./tester -T 14 -w 7 ./reliable
+./tester --verbose -T 13 ./reliable 
+./tester --verbose -T 7 ./reliable 
+./tester --verbose -T 12 ./reliable 
+
+./tester --seed 8 -w 2 ./reliable
+python3 window_test.py 5 ./reliable ./reliable_no_answer
+
+./tester -w 30 -T 14 ./reliable
+
+./tester -w 234 -T 14 ./reliable
+./tester -w 5 -v ./reliable -d
+./tester -w 5 ./reliable
+./tester -w 50 ./reference -d
+
+./tester -w 20 -T 1 -v ./reliable -d
+
+./tester -w 20 -T 8 -v ./reliable -d
+
+./tester -w 18 -T 14 -v ./reliable -d
+
+./tester -w 20 -T 12 -v ./reliable -d
+./tester -w 20 -T 9 -v ./reliable 
+
+./tester -w 20 -T 2 -v ./reliable -d
+
+./tester -w 134 -T 7 -v ./reliable -d
+
+
+./tester -w 49 --seed 1 -T 14 -v ./reliable -d
+./tester -w 5 --seed 5 -T 14 -v ./reliable -d
+
+./tester -w 40 --seed 1 -v -T 12 ./reliable -d
+
+./tester -w 2 --seed 2 -T 14 ./reliable
+./tester -w 40 --seed 1 -T 12 -v ./reliable -d
+./tester -w 40 --seed 1 -T 7 -v ./reliable -d
+./tester -w 100 --seed 5 -T 12 ./reliable
+./tester -w 100 --seed 5 -T 14 -v ./reliable -d
+./tester -w 40 --seed 1 -T 14 -v ./reliable -d
+
+./tester -w 3 --seed 4 -T 12 -v ./reliable -d
+./tester -w 22 --seed 1 -T 8 ./reliable
+./tester -w 8 --seed 5 ./reliable
+./tester -w 8 --seed 5 -T 7 -v ./reliable -d
+
+./reliable -d 44 33
+./reliable -d 33 44
+
+Window: 9 SEED: 1 SCORE: 12
+./tester -w 2 --seed 2 -T 13 -v ./reliable -d
+./tester -w 3 --seed 4 ./reliable
+./tester -w 2 --seed 2 ./reliable
+./tester -w 50 --seed 5 ./reliable
+./tester -w 2 --seed 2 -T 12 -v ./reliable -d
+
+# make
+gcc -g -Wall  -c reliable.c
+gcc -g -Wall  -o reliable buffer.o reliable.o rlib.o  `test -f /usr/lib/librt.a && printf -- -lrt`
+# ./tester -T 8 -v ./reliable -d
+./tester -T 13 -v -w 50 ./reliable -d
+
+
+left Ha1
+right Ho1
+right ctrl + d
+left ctrl +d
+
+Window: 5 SEED: 2 SCORE: 13
+./tester -w 5 --seed 2 ./reliable
+Window: 4 SEED: 4 SCORE: 13
+./tester -w 4 --seed 4 ./reliable
+./tester -w 4 --seed 4 -T 14 -v ./reliable -d
+Window: 5 SEED: 2 SCORE: 12
+./tester -w 5 --seed 2 ./reliable
+./tester -w 5 --seed 2 -T 12 -v ./reliable -d
+./tester -w 5 --seed 2 -T 14 -v ./reliable -d
+
+./tester -w 5 --seed 2 -T 12 -v ./reliable -d 
+./tester -w 5 --seed 2 -T 7 -v ./reliable -d
+./tester -w 5 --seed 2 -T 14 -v ./reliable -d
+
+./tester -w 5 --seed 2 -T 12 ./reliable
+./tester -w 5 --seed 2 -T 7 ./reliable
+./tester -w 5 --seed 2 -T 14 ./reliable
+
+./tester -w 5 --seed 2 -T 13 ./reliable 
+
+
+./tester -w 5 --seed 2 -T 14 ./reliable
+
+./tester -w 16 --seed 2 ./reliable
+./tester -w 16 --seed 2 ./reference
+
+
+./tester -w 56 --seed 243356 -T 7 -v ./reliable -d
+./tester -w 16 --seed 2 -T 1 -v ./reliable -d
+
+./tester -w 16 --seed 2 -T 12 ./reliable
+
+./tester -w 16 --seed 2 -T 14 ./reliable
+./tester -w 44 --seed 5 -v -T 12 ./reliable
+./tester -w 44 --seed 5 -v -T 13 ./reliable
+./tester -w 44 --seed 5 -v -T 12 -d ./reliable
+
+# ./tester -h
+unrecognized option `-h'
+
+usage: tester [OPTIONS] reliable [reliable OPTIONS]
+
+           --seed=SEED     set random seed to a specific string
+  -d       --debug         enable debugging support
+           --gdb           print PID forked processes so you can attach with gdb
+  -v       --verbose       show reliable program stderr
+  -L       --list          list available tests
+  -s       --server        test server mode
+  -w SIZE  --window=SIZE   specify window size
+  -T #     --test=#        run just one test
+  -t msec  --timeout=msec  retransmission timeout
+
+# 
+
+
+
